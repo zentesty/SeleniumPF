@@ -1,4 +1,6 @@
-package com.zentelia.automation.pagefactoryexample;
+import com.zentelia.automation.pagefactoryexample.DashboardPage;
+import com.zentelia.automation.pagefactoryexample.LoginPage;
+import com.zentelia.automation.pagefactoryexample.SettingsPage;
 import junit.framework.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -28,6 +30,8 @@ public class TestRunner {
 
     @Test
     public void LoginTest() {
+        System.out.println("************* M P R ***************");
+
         //Initialize Login Page
         LoginPage loginPage=PageFactory.initElements(driver, LoginPage.class);
         //Enter user name
